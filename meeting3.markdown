@@ -112,4 +112,13 @@ Loops are most interesting when we use them inside functions.
 
 **Practice Problem:** A number is a prime number if it is only evenly divisible by 1 and itself (although we don't consider 1 a prime number, so 2 is the first prime number). Write a function called `isPrime` that accepts a number `p` as an argument and returns `true` if it is prime, false otherwise.
 
+**Practice Problem:** Using the `isPrime` function, write a function that sums all the primes smaller than 100.
+
 **Practice Problem:** Using the `isPrime` function, write a function that sums the first 100 prime numbers.
+
+
+var sumOneHundred = function () {
+var sum = 0;
+
+
+}
