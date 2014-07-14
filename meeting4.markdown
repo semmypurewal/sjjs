@@ -127,7 +127,7 @@ What happens if you ask for a index that doesn't exist? JavaScript returns the s
 
 Arrays can be passed as arguments to functions just like anything else:
 
-    function secondElementOf(arr) {
+    var secondElementOf = function (arr) {
        return arr[1];
     }
 
@@ -138,7 +138,7 @@ And you'll often want to iterate over the values to determine some property of t
 
 We can use this to write a function that prints all of the elements of the array by using a for loop to iterate over all of the indices.
 
-    function printEachElement(list) {
+    var printEachElement = function (list) {
         var index;
     
         for (index = 0; index < list.length; index++) {
@@ -189,33 +189,32 @@ As long as the operations in your function work on characters (as opposed to num
 
 ## Problems
 
+**Practice Problem:** Write a function called `firstNumDivisibleByN` that accepts two arguments: `n` and an array, and returns `true` if the first number in the array is evenly divisible by `n`, false otherwise. For example, the function would work as follows.
 
-var nums = [ 5, 1, 7, 3, 8, 0, 2, 5 ]
+    firstNumDivisibleBy(2, [5, 3, 2, 1]);
+    //=> false
 
-firstNumDivisibleByN(nums, 2);
-//=> 8
+    firstNumDivisibleBy(5, [5, 3, 2, 1]);
+    //=> true
 
-0
+**Practice Problem:** Write a function called `secondLetterIs` that accepts two arguments: `letter` and an array, and returns `true` if the second letter in the string is `letter`.
 
-var printEachElement = function (listOfNumbers) {
-    var index;
+**Practice Problem:** Write a function called `containsValueTwice` that accepts a number and an array, and returns `true` if that number appears in the array twice, and `false` otherwise.
 
-    for (index = 0; index < listOfNumbers.length; index = index + 1) {
-        console.log(listOfNumbers[index]);
-    }
-}
+**Practice Problem:** Generalize the previous solution into a function called `containsValueNTimes` so that it can check for a value an arbitrary number of times.
 
+**Practice Problem:** Write a function called `isCapitalized` that accepts a string and returns `true` if the first letter is a capital letter. How can you determine that? Remember that you can use strings in comparisons in the same way that you can use numbers, and the ordering is alphabetical (with capital letters having lower values than their lower-case counterparts).
 
-Write a function that accepts an array of numbers and returns the largest.
+**Practice Problem:** Write a function called `containsNVowels` that accepts a number, `n`, and a string and returns true if a string contains at least `n` vowels.
 
-Write a function that accepts an array and a number n, and returns the first number that in the array that is divisible by n.
+**Practice Problem:** Write a function called `atLeastOneEven` that returns `true` if at least one of the numbers in the array is even, false otherwise.
 
-Example:
+**Practice Problem:** Write a function called `allEven` that returns `true` if all of the values in the array are even, and false otherwise.
 
-var nums = [ 5, 1, 7, 3, 8, 0, 2, 5 ]
+**Practice Problem:** Write a function that accepts two arrays, and returns true if any of the numbers in the first array appear twice in the second array. You might want to reuse the function `containsValueNTimes` from above.
 
-firstNumDivisibleByN(nums, 2);
-//=> 8
+**Practice Problem:** Generalize the above problem above so that it accepts two arrays and a number, and returns true if any of the numbers in the first array appear `n` times in the second array.
 
-Write a function that accepts an array and a number n, and returns the number of values that first number that in the array that is divisible by n.
+**Practice Problem:** Write a function that accepts a string and returns the same string, only in reverse! (HINT: create a new empty string, and concatenate each letter of the original string to it in reverse)
+
 
