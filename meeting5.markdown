@@ -252,13 +252,25 @@ These two methods will be useful in several of the problems below.
 
 
 
-**Practice Problem:** Write a function that returns the sum of all of the multiples of 3 and 5 smaller than 1000.
+**Practice Problem (c/o Project Euler):** Write a function that returns the sum of all of the multiples of 3 and 5 smaller than 1000.
 
 **Practice Problem:** Write a function that accepts a string and returns true if that word contains at least one vowel.
 
 **Practice Problem:** Write a function that accepts a list of words, and returns the sum of the lengths of all the words that contain at least one vowel.
 
 **Practice Problem:** Write a function that accepts an array of strings and returns a list of same strings with all of the vowels removed.
+
+**Practice Problem:** You can generate a random integer between two values (largest value is not included in the possibilities) with some `Math.random` hackery. Here's how I do it:
+
+var randomIntBetween = function (min, max) {
+    return Math.floor(Math.random()*(max-min) + min);
+}
+
+Use this function called `randomNums` that uses `range` and map to create an array of random integers. The function should accept 3 values: a min for the random numbers, a max for the random numbers, and a length of the array.
+
+**Practice Problem:** Using the `randomNums` function from above, write a function called `randomBitString` that generates a random string of 0s and 1s.
+
+**Practice Problem:** Write a function called `countOnes` that accepts a bitString and returns the number of 1s contained in it. Using the randomBitString from above, count the number of 1s in several random bit strings. What do you notice about them?
 
 **Practice Problem:** Write a function that accepts a string and returns that string in reverse (hint: use `reduce`)
 
@@ -273,16 +285,5 @@ isAPalindrome("A man, a plan, a canal, Panama");
 isAPalindrome("hello world");
 //=> false
 
-**Practice Problem:** 
-
-**Practice Problem:** 
-
-**Practice Problem:** 
-
-**Practice Problem:** 
-
-**Practice Problem:** 
-
-**Practice Problem:** 
 
 
