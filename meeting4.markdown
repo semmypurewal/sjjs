@@ -161,6 +161,9 @@ One of the simplest things you can do with a list of numbers is return their sum
         return smallestSoFar;
     }
 
+
+// include a bit about creating arrays here
+
 ## Strings
 
 Strings are just special cases of Arrays where all the elements are characters. They are denoted using quotes, but can be manipulated just like Arrays.
@@ -186,6 +189,8 @@ As long as the operations in your function work on characters (as opposed to num
     //=> l
     //=> o
     //=> !
+
+Note that you can't _mutate_ strings, meaning setting an index won't work in the same way that it works with arrays. More on this later.
 
 ## Problems
 
