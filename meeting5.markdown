@@ -250,8 +250,6 @@ These two methods will be useful in several of the problems below.
 
 ## Problems (use the methods learned here to solve these problems -- no `for` loops!)
 
-
-
 **Practice Problem (c/o Project Euler):** Write a function that returns the sum of all of the multiples of 3 and 5 smaller than 1000.
 
 **Practice Problem:** Write a function that accepts a string and returns true if that word contains at least one vowel.

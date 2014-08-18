@@ -79,7 +79,7 @@ Believe it or not, Computers are mostly interesting because they can repeat thin
 The most basic way to repeat something in JavaScript is with a `for` loop. (There are other types of loops including `while` loops and `do-while` loops, but we'll ignore them for now). The most basic structure looks something like this.
 
     var count;
-u    
+
     for (count = 0; count < 100; count = count + 1) {
         console.log(count);
     }
