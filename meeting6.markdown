@@ -109,7 +109,7 @@ Like arrays, we can _mutate_ objects by setting updating the values.
     //=> 37
     
 
-== What are these good for?
+## What are these good for?
 
 Objects are good for associating a set of related data with a single
 variable and building up custom data types. For instance, suppose we
