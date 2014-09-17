@@ -32,30 +32,30 @@ You can also mutate arrays by adding new values to the end using the
 The most basic way to process an array is by using a `for` loope that
 iterates over the indices of the array.
 
-var contains = function (list, word) {
-    var index ,
-        result = false; // assume it doesn't contain the word
-
-    for (index = 0; index < list.length; index = index + 1) {
-        if (list[index] === word) {
-            result = true;  // found it!
+    var contains = function (list, word) {
+        var index ,
+            result = false; // assume it doesn't contain the word
+    
+        for (index = 0; index < list.length; index = index + 1) {
+            if (list[index] === word) {
+                result = true;  // found it!
+            }
         }
+    
+        return result;
     }
-
-    return result;
-}
 
 But it's better to use the built-in array functions like `some`,
 `every`, `map`, `filter`, and `reduce` to solve these types of
 problems whenever possible.
 
-var contains = function (list, word) {
-    return list.some(function (element) {
-        return word === element;
-    });
-}
+    var contains = function (list, word) {
+        return list.some(function (element) {
+            return word === element;
+        });
+    }
 
-== Objects As Maps
+## Objects As Maps
 
 Believe it or not, sometimes it's useful to have data stored in
 structures that are indexed by things that aren't numbers. These are
